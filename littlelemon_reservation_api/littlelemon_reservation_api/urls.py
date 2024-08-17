@@ -23,4 +23,6 @@ urlpatterns = [
     path('api/', include('reservations.urls')),
     path('api/registration/', include('djoser.urls')),
     path('api/registration/', include('djoser.urls.jwt')),
+    path('api/auth/', include('djoser.urls')),
+    path('api/auth/', include('djoser.urls.jwt')),
 ]
